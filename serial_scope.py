@@ -23,7 +23,7 @@ FREQ_G_MAP = {
 }
 
 def calculate_coeffs(g):
-    nf = (21 * (2 ** (6 * g + 51))) / 125.0
+    nf = (40 * (2 ** (6 * g + 51))) / 125.0
     na = 2 ** (24 + 6 * g)
     return nf, na
 
@@ -381,4 +381,5 @@ if __name__ == "__main__":
     except Exception as e:
         import traceback
         traceback.print_exc()
+
         input("程序出错，按回车键退出...")
